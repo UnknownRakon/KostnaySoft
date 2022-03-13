@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>KostanaySoft</title>
+</head>
+
+<body>
+    <div class="flex-shrink-0 p-3 bg-white offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" style="width: 280px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
+            <button type="button" class="btn text-resets" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="bi bi-x fs-4"></i>
+            </button>
+        </div>
+        <hr>
+        <ul class="list-unstyled ps-0">
+            <li class="mb-1 w-100">
+                <a class="btn link-primary buton_no-focus text-start rounded collapsed w-100 ps-4" href="/">
+                    Главная
+                </a>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Продукция
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Расписание</a></li>
+                        <li><a href="#" class="link-dark rounded">Кадровый учет (Казахстан)</a></li>
+                        <li><a href="#" class="link-dark rounded">Кадровый учет (Россия)</a></li>
+                        <li><a href="#" class="link-dark rounded">Документооборот</a></li>
+                        <li><a href="#" class="link-dark rounded">Библиотечное дело</a></li>
+                        <li><a href="#" class="link-dark rounded">Диплом и приложение</a></li>
+                        <li><a href="#" class="link-dark rounded">Бібліотечна справа</a></li>
+                        <li><a href="#" class="link-dark rounded">Раскладка казахского языка</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New</a></li>
+                        <li><a href="#" class="link-dark rounded">Processed</a></li>
+                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                        <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#account-collapse" aria-expanded="false">
+                    Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New...</a></li>
+                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <header class="p-3 bg-dark text-white">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="d-flex col-12 col-lg-auto me-lg-auto">
+                    <button class="btn me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                        <i class="bi text-light bi-list fs-4"></i>
+                    </button>
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+                        <img src="img/Logo.png" alt="logo" width="30" class="me-3">
+                        <span class="logo__heading_blue">Kostanay</span><span class="logo__heading_red">Soft</span>
+                    </a>
+                </div>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex">
+                    <input type="search" class="form-control form-control-dark bg-dark text-white me-2"
+                        placeholder="Поиск..." aria-label="Search">
+                    <button class="btn bg-light" type="submit">
+                        <i class="bi bi-search text-dark fs-6"></i>
+                    </button>
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Войти</button>
+                    <button type="button" class="btn btn-light">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
